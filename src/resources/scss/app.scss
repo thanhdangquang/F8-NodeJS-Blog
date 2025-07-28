@@ -1,0 +1,16 @@
+@import "variables";
+.test {
+  font-size: 15rem;
+  background-color: $color-red;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: $color-red;
+}
+
+body {
+  color: $color-red;
+}
