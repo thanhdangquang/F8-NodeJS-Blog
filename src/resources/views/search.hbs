@@ -1,0 +1,33 @@
+<div class="mt-4">
+  <div class="container mt-5">
+    <form method="post">
+      <!-- Ô nhập từ khóa -->
+      <div class="mb-3">
+        <input
+          name="q"
+          class="form-control"
+          type="text"
+          placeholder="Nhập từ khóa..."
+          aria-label="Search"
+        />
+      </div>
+
+      <!-- Chọn giới tính -->
+      <div class="mb-3">
+        <label for="gender-input">Giới tính</label>
+        <select name="gender" class="form-control" id="gender-input">
+          <option value="">--Chọn giới tính--</option>
+          <option value="male">Nam</option>
+          <option value="female">Nữ</option>
+        </select>
+      </div>
+
+      <!-- Nút tìm kiếm -->
+      <div>
+        <button class="btn btn-outline-primary" type="submit">
+          Tìm kiếm
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
