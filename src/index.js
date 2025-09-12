@@ -7,6 +7,11 @@ const { engine } = require('express-handlebars');
 const sass = require('sass');
 
 const route = require('./routes/index');
+const db=require('./config/db');
+
+//Connect to DB
+db.connectDB();
+
 
 route(app);
 app.use(express.static(path.join(__dirname, 'public')));
@@ -26,5 +31,5 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources', 'views'));
 
 app.listen(port, () => {
-   console.log(`Example app listening on port ${port}`);
+   console.log(`App listening on port ${port}`);
 });
