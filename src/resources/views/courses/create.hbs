@@ -1,0 +1,59 @@
+<div class="container mt-5">
+    <h2 class="mb-4">Thêm Khóa Học Mới</h2>
+    <form method="POST" action="/courses/store">
+        <div class="mb-3">
+            <label for="courseName" class="form-label">Tên Khóa Học</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                id="courseName" 
+                name="name" 
+                placeholder="Nhập tên khóa học" 
+                required
+            >
+        </div>
+
+        <div class="mb-3">
+            <label for="courseVideo" class="form-label">Video Khóa Học</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                id="courseVideo" 
+                name="videoID" 
+                placeholder="Nhập URL video khóa học" 
+                required
+            >
+        </div>
+
+        <div class="mb-3">
+            <label for="courseDescription" class="form-label">Mô Tả Khóa Học</label>
+            <textarea 
+                class="form-control" 
+                id="courseDescription" 
+                name="description" 
+                rows="4" 
+                placeholder="Nhập mô tả khóa học" 
+                required
+            ></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="courseLevel" class="form-label">Mức Độ Khóa Học</label>
+            <select 
+                class="form-select" 
+                id="courseLevel" 
+                name="level" 
+                required
+            >
+                <option selected disabled value="">Chọn mức độ</option>
+                <option value="1">Level 1</option>
+                <option value="2">Level 2</option>
+                <option value="3">Level 3</option>
+                <option value="4">Level 4</option>
+                <option value="5">Level 5</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Thêm Khóa Học</button>
+    </form>
+</div>
